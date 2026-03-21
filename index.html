@@ -70,27 +70,51 @@ th {
 
 td {
     padding: 12px 8px;
-    border-radius: 8px;
+    vertical-align: top;
 }
 
 tr:hover td {
     background: rgba(255,255,255,0.05);
+    border-radius: 8px;
 }
 
 td:first-child {
     color: #71717a;
-    width: 100px;
+    width: 120px;
+    font-weight: 500;
 }
 
+/* ITEM */
+.item {
+    margin-bottom: 8px;
+}
+
+/* BADGE */
 .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     padding: 6px 10px;
     border-radius: 8px;
     font-size: 13px;
-    display: inline-block;
 }
 
-.handball { background: #ef4444; }
-.clase { background: #3b82f6; }
+/* LOGO */
+.badge img {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+/* COLORES */
+.handball { background: #2563eb; } /* azul */
+.clase { background: #16a34a; }   /* verde */
+
+.hora {
+    color: #a1a1aa;
+    font-size: 12px;
+    margin-left: 6px;
+}
 
 </style>
 </head>
@@ -112,38 +136,60 @@ td:first-child {
         <table>
             <tr>
                 <th>Día</th>
-                <th>Horario</th>
-                <th>Actividad</th>
+                <th>Actividades</th>
             </tr>
 
             <tr>
                 <td>Lunes</td>
-                <td>16:00 – 17:30</td>
-                <td><span class="badge handball">Prácticas Handball</span></td>
-            </tr>
-
-            <tr>
-                <td>Lunes</td>
-                <td>20:10 – 23:00</td>
-                <td><span class="badge clase">Clases Hist. de las Ideas</span></td>
+                <td>
+                    <div class="item">
+                        <span class="badge handball">
+                            <img src="https://federacionentrerrianadefutbol.org.ar/wp-content/uploads/2024/12/Club-Deportivo-25-de-Mayo.png">
+                            Prácticas Handball
+                        </span>
+                        <span class="hora">16:00 – 17:30</span>
+                    </div>
+                    <div class="item">
+                        <span class="badge clase">
+                            <img src="https://ensmagnasco-ers.infd.edu.ar/sitio/wp-content/uploads/2018/08/logo_normal_red-WEB.png">
+                            Clases Hist. de las Ideas
+                        </span>
+                        <span class="hora">20:10 – 23:00</span>
+                    </div>
+                </td>
             </tr>
 
             <tr>
                 <td>Miércoles</td>
-                <td>19:00 – 20:30</td>
-                <td><span class="badge handball">Prácticas Handball</span></td>
-            </tr>
-
-            <tr>
-                <td>Miércoles</td>
-                <td>21:00 – 23:00</td>
-                <td><span class="badge clase">Clases UDI</span></td>
+                <td>
+                    <div class="item">
+                        <span class="badge handball">
+                            <img src="https://federacionentrerrianadefutbol.org.ar/wp-content/uploads/2024/12/Club-Deportivo-25-de-Mayo.png">
+                            Prácticas Handball
+                        </span>
+                        <span class="hora">19:00 – 20:30</span>
+                    </div>
+                    <div class="item">
+                        <span class="badge clase">
+                            <img src="https://ensmagnasco-ers.infd.edu.ar/sitio/wp-content/uploads/2018/08/logo_normal_red-WEB.png">
+                            Clases UDI
+                        </span>
+                        <span class="hora">21:00 – 23:00</span>
+                    </div>
+                </td>
             </tr>
 
             <tr>
                 <td>Viernes</td>
-                <td>16:00 – 17:30</td>
-                <td><span class="badge handball">Prácticas Handball</span></td>
+                <td>
+                    <div class="item">
+                        <span class="badge handball">
+                            <img src="https://federacionentrerrianadefutbol.org.ar/wp-content/uploads/2024/12/Club-Deportivo-25-de-Mayo.png">
+                            Prácticas Handball
+                        </span>
+                        <span class="hora">16:00 – 17:30</span>
+                    </div>
+                </td>
             </tr>
 
         </table>
