@@ -15,20 +15,14 @@ body {
     align-items: center;
 }
 
-/* VENTANA */
 .window {
-    width: 900px;
-    height: 600px;
+    width: 700px;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    background: rgba(28,28,30,0.85);
-    backdrop-filter: blur(20px);
-    display: flex;
-    flex-direction: column;
+    background: rgba(28,28,30,0.9);
 }
 
-/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -36,7 +30,6 @@ body {
     background: rgba(50,50,52,0.8);
 }
 
-/* BOTONES */
 .dots {
     display: flex;
     gap: 8px;
@@ -58,13 +51,10 @@ body {
     font-size: 14px;
 }
 
-/* CONTENIDO */
 .content {
-    padding: 15px;
-    overflow-y: auto;
+    padding: 20px;
 }
 
-/* TABLA */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -75,40 +65,32 @@ th {
     text-align: left;
     font-weight: 500;
     color: #a1a1aa;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    background: #1c1c1e;
+    padding-bottom: 10px;
 }
 
 td {
-    padding: 10px;
+    padding: 12px 8px;
     border-radius: 8px;
 }
 
-/* HOVER */
 tr:hover td {
     background: rgba(255,255,255,0.05);
 }
 
-/* HORA */
 td:first-child {
     color: #71717a;
-    width: 80px;
+    width: 100px;
 }
 
-/* BADGES */
 .badge {
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 13px;
     display: inline-block;
 }
 
-.work { background: #3b82f6; }
-.study { background: #6366f1; }
-.rest { background: #10b981; }
-.free { background: #6b7280; }
+.handball { background: #ef4444; }
+.clase { background: #3b82f6; }
 
 </style>
 </head>
@@ -129,31 +111,40 @@ td:first-child {
     <div class="content">
         <table>
             <tr>
-                <th>Hora</th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
+                <th>Día</th>
+                <th>Horario</th>
+                <th>Actividad</th>
             </tr>
 
-            <!-- GENERADO 08 a 23 -->
-            <tr><td>08:00</td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>09:00</td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>10:00</td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>11:00</td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>12:00</td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td></tr>
-            <tr><td>13:00</td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>14:00</td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>15:00</td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>16:00</td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>17:00</td><td><span class="badge work">Trabajo</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge work">Trabajo</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>18:00</td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td></tr>
-            <tr><td>19:00</td><td><span class="badge study">Estudio</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge study">Estudio</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>20:00</td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>21:00</td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td><td><span class="badge free">Libre</span></td></tr>
-            <tr><td>22:00</td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td></tr>
-            <tr><td>23:00</td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td><td><span class="badge rest">Descanso</span></td></tr>
+            <tr>
+                <td>Lunes</td>
+                <td>16:00 – 17:30</td>
+                <td><span class="badge handball">Prácticas Handball</span></td>
+            </tr>
+
+            <tr>
+                <td>Lunes</td>
+                <td>20:10 – 23:00</td>
+                <td><span class="badge clase">Clases Hist. de las Ideas</span></td>
+            </tr>
+
+            <tr>
+                <td>Miércoles</td>
+                <td>19:00 – 20:30</td>
+                <td><span class="badge handball">Prácticas Handball</span></td>
+            </tr>
+
+            <tr>
+                <td>Miércoles</td>
+                <td>21:00 – 23:00</td>
+                <td><span class="badge clase">Clases UDI</span></td>
+            </tr>
+
+            <tr>
+                <td>Viernes</td>
+                <td>16:00 – 17:30</td>
+                <td><span class="badge handball">Prácticas Handball</span></td>
+            </tr>
 
         </table>
     </div>
